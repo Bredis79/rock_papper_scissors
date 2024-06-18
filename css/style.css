@@ -1,0 +1,300 @@
+strong {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.wrapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/4851806.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapp h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.hraciPlocha {
+    width: 80%;
+    max-width: 1000px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hraciPlocha .jmeno {
+    font-size: 2rem;
+}
+
+.hrac {
+    width: 440px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.choice {
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    _background-color: lightblue;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}
+
+.hrac .choice .kamen {
+    transform: rotate(90deg) scale(20);
+    display: none;
+}
+
+.hrac .choice .nuzky {
+    transform: scale(20) scaleX(-1);
+    display: none;
+}
+
+.hrac .choice .papir {
+    transform: scale(20);
+    display: none;
+}
+
+.pocitac {
+    width: 440px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    position: relative;
+}
+
+.hraciPlocha .pocitac .obal{
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    _background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.pocitac .kamen {
+    transform: rotate(-90deg) scale(20) scaleX(-1);
+    display: none;
+    color: #fca53b;
+}
+
+.pocitac .nuzky,
+.pocitac .papir {
+    transform: scale(20);
+    display: none;
+    color: #fca53b;
+} 
+
+.vissible {
+    display: flex;
+}
+
+.hrac .score {
+    position: absolute;
+    top: 0;
+    right: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.pocitac .score {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    backdrop-filter: opacity(0.1);
+}
+
+.remiza_obal {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.remiza_obal p {
+    font-size: 2rem;
+}
+
+.remiza {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+#startButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    background-color: lightblue;
+    text-decoration: none;
+    color: rgb(209, 81, 49);
+    backdrop-filter: blur(3px);
+}
+
+.ok_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    padding: 5px 20px;
+    font-size: 2rem;
+    background-color: rgb(182, 204, 211);
+    text-decoration: none;
+    color: rgb(24, 173, 4);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ok_btn:hover {
+    background-color: rgb(155, 216, 235);
+}
+
+#startButton:hover {
+    cursor: pointer;
+}
+
+.instructions {
+    display: flex;
+    height: 130px;
+    _border: 1px solid red;
+    column-gap: 50px;
+    align-items: flex-end;
+}
+
+.instructions i {
+    transform: scale(3);
+    display: flex;
+    /* height: 20px; */
+    justify-content: center;
+}
+
+.instructions .press {
+    _border: 1px solid black;
+    width: 100px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 25px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.instructions .press .icon {
+    _background-color: red;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.instructions .press .kamen {
+    transform: rotate(90deg) scale(3);
+}
+
+.instructions .press .nuzky {
+    transform: scaleX(-1) scale(3);
+}
+
+#help {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.help_info > * {
+    font-size: 1.2rem;
+}
+
+.help_info {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 10;
+    background-color: beige;
+}
+
+.help_info p {
+    margin-bottom: 20px;
+}
+
+.help_info ul li {
+    margin-bottom: 10px;
+}
+
+.help_info:hover {
+    display: flex;
+    
+}
